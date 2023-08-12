@@ -1,0 +1,42 @@
+.selected-button {
+    -fx-background-color: red;
+    -fx-background: red;
+}
+
+.task-list-button {
+    -fx-background-radius: 7;
+    -fx-border-color: transparent;
+    -fx-background-color: white;
+}
+
+.task-list-button.task-list-button-selected {
+    -fx-background-radius: 7;
+    -fx-border-color: transparent;
+    -fx-background-color: #3d66a8;
+}
+
+.task-list-button.task-list-button-selected > TextField {
+    -fx-text-fill: white;
+}
+
+.task-list-button.task-list-button-selected.task-list-button-editing > TextField {
+    -fx-text-fill: black!important;
+}
+
+.completed-task > Label {
+    -fx-opacity: 0.5;
+    -fx-strikethrough: true;
+}
+
+.completed-task {
+    -fx-background-color: transparent!important;
+}
+
+.task-list-button {
+    -fx-cursor: hand;
+}
+
+.task-list-button > TextField {
+    -fx-opacity: 1.0; // Makes sure that the text is always black
+
+}

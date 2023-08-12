@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root alignment="CENTER_LEFT" prefHeight="50.0" style="-fx-background-radius: 5; -fx-border-color: #C9C9C9; -fx-background-color: white; -fx-border-color: transparent;" type="HBox" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label fx:id="taskLabel" maxWidth="1.7976931348623157E308" style="-fx-text-fill: black;" text="Buy groceries" HBox.hgrow="ALWAYS">
+            <HBox.margin>
+                <Insets left="20.0" right="20.0" />
+            </HBox.margin>
+        </Label>
+        <CheckBox fx:id="checkbox" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false">
+            <HBox.margin>
+                <Insets right="15.0" />
+            </HBox.margin>
+        </CheckBox>
+    </children>
+</fx:root>

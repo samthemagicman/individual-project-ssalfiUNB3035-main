@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="510.0" prefWidth="801.0" stylesheets="@../../../../main-style.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.unb.cs3035.project.MainController">
+   <center>
+      <VBox style="-fx-background-color: #e3e3e3;" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <Label fx:id="selectedTasksListHeader" text="Tasks">
+               <font>
+                  <Font name="System Bold" size="27.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="15.0" left="30.0" top="15.0" />
+               </VBox.margin>
+            </Label>
+            <ScrollPane fitToWidth="true" style="-fx-background-color: transparent; -fx-background: transparent; -fx-border: none;" VBox.vgrow="ALWAYS">
+              <content>
+                <AnchorPane fx:id="tasksAnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: transparent;">
+                     <children>
+                        <VBox id="tasks" spacing="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="50.0" style="-fx-background-radius: 5; -fx-border-color: #C9C9C9; -fx-background-color: white; -fx-border-color: transparent;">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" text="Buy groceries" HBox.hgrow="ALWAYS">
+                                       <HBox.margin>
+                                          <Insets left="20.0" right="20.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <CheckBox alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false">
+                                       <HBox.margin>
+                                          <Insets right="15.0" />
+                                       </HBox.margin>
+                                    </CheckBox>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="15.0" prefHeight="50.0" style="-fx-background-radius: 5; -fx-border-color: #C9C9C9; -fx-background-color: white; -fx-border-color: transparent;">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" text="Buy groceries" HBox.hgrow="ALWAYS">
+                                       <HBox.margin>
+                                          <Insets left="20.0" right="20.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <CheckBox alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false">
+                                       <HBox.margin>
+                                          <Insets right="15.0" />
+                                       </HBox.margin>
+                                    </CheckBox>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" layoutX="15.0" layoutY="70.0" prefHeight="50.0" style="-fx-background-radius: 5; -fx-border-color: #C9C9C9; -fx-background-color: white; -fx-border-color: transparent;">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" text="Buy groceries" HBox.hgrow="ALWAYS">
+                                       <HBox.margin>
+                                          <Insets left="20.0" right="20.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <CheckBox alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false">
+                                       <HBox.margin>
+                                          <Insets right="15.0" />
+                                       </HBox.margin>
+                                    </CheckBox>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" layoutX="15.0" layoutY="125.0" prefHeight="50.0" style="-fx-background-radius: 5; -fx-border-color: #C9C9C9; -fx-background-color: white; -fx-border-color: transparent;">
+                                 <children>
+                                    <Label maxWidth="1.7976931348623157E308" text="Buy groceries" HBox.hgrow="ALWAYS">
+                                       <HBox.margin>
+                                          <Insets left="20.0" right="20.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <CheckBox alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false">
+                                       <HBox.margin>
+                                          <Insets right="15.0" />
+                                       </HBox.margin>
+                                    </CheckBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+            <HBox spacing="10.0" VBox.vgrow="NEVER">
+               <children>
+                  <TextField fx:id="addTaskField" HBox.hgrow="ALWAYS" />
+                  <Button fx:id="addTaskButton" mnemonicParsing="false" text="Add" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="closeMenuItem" mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+                <MenuItem fx:id="deleteAllTasksMenuItem" mnemonicParsing="false" text="Delete All Tasks" />
+                <MenuItem fx:id="markAllTasksCompleteMenuItem" mnemonicParsing="false" text="Mark All Tasks Complete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem fx:id="helpMenuItem" mnemonicParsing="false" text="Help" />
+                  <MenuItem fx:id="aboutMenuItem" mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <VBox VBox.vgrow="ALWAYS">
+         <children>
+             <ScrollPane fitToWidth="true" hbarPolicy="NEVER" prefWidth="180.0" style="-fx-background-color: transparent;" VBox.vgrow="ALWAYS">
+                 <content>
+                     <AnchorPane fx:id="taskListAnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity">
+                         <children>
+                             <VBox id="tasksList" fx:id="tasksList" spacing="7.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                              <HBox alignment="CENTER_LEFT" layoutX="17.0" layoutY="17.0" minHeight="40.0" prefHeight="40.0" style="-fx-background-radius: 7; -fx-border-color: transparent; -fx-background-color: white;">
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                                 <padding>
+                                    <Insets left="5.0" right="5.0" />
+                                 </padding>
+                                 <children>
+                                    <Label text="All Tasks">
+                                       <padding>
+                                          <Insets left="10.0" />
+                                       </padding>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" layoutX="17.0" layoutY="17.0" minHeight="40.0" prefHeight="40.0" style="-fx-background-radius: 7; -fx-border-color: transparent; -fx-background-color: white;">
+                                 <children>
+                                    <TextField style="-fx-background: none;" text="All Tasks" />
+                                 </children>
+                                 <padding>
+                                    <Insets left="5.0" right="5.0" />
+                                 </padding>
+                              </HBox>
+                                 </children>
+                                 <opaqueInsets>
+                                     <Insets />
+                                 </opaqueInsets>
+                           <padding>
+                              <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+                           </padding>
+                             </VBox>
+                         </children>
+                     </AnchorPane>
+                 </content>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+             </ScrollPane>
+            <HBox VBox.vgrow="NEVER">
+               <children>
+                   <Button id="newTaskList" maxWidth="1.7976931348623157E308" onAction="#onNewTaskListButtonClicked" text="New Task List" HBox.hgrow="ALWAYS" />
+               </children>
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" />
+         </padding>
+      </VBox>
+   </left>
+</BorderPane>

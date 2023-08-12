@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="268.0" prefWidth="564.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="30.0" layoutY="32.0" prefHeight="205.0" prefWidth="505.0" text="The application is quite easy!&#10;&#10;You can view your sublists on the left-hand side. You can create a new sublist by pressing the &quot;New Task List&quot; button.&#10;&#10;A sublist, or task list, simply holds a list of tasks. You can press &quot;All Tasks&quot; to view all of your tasks from all of your lists.&#10;&#10;You can then add a new task to do by entering the task description and pressing &quot;Add&quot;.&#10;&#10;When a task is completed, you can press the checkbox next to the task to check it off!" textAlignment="CENTER" wrapText="true" />
+   </children>
+</AnchorPane>

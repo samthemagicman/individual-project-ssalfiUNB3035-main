@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<fx:root type="VBox"
+         id="tasksList" prefHeight="54.0" spacing="7.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"
+
+         xmlns="http://javafx.com/javafx"
+         xmlns:fx="http://javafx.com/fxml">
+    <children>
+        <HBox alignment="CENTER_LEFT" layoutX="17.0" layoutY="17.0" minHeight="40.0" prefHeight="40.0" style="-fx-background-radius: 7; -fx-border-color: transparent; -fx-background-color: white;">
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+            <padding>
+                <Insets left="5.0" right="5.0" />
+            </padding>
+            <children>
+                <Label text="All Tasks">
+                    <padding>
+                        <Insets left="10.0" />
+                    </padding>
+                </Label>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" layoutX="17.0" layoutY="17.0" minHeight="40.0" prefHeight="40.0" style="-fx-background-radius: 7; -fx-border-color: transparent; -fx-background-color: white;">
+            <children>
+                <TextField style="-fx-background: none;" text="All Tasks" />
+            </children>
+            <padding>
+                <Insets left="5.0" right="5.0" />
+            </padding>
+        </HBox>
+    </children>
+    <opaqueInsets>
+        <Insets />
+    </opaqueInsets>
+    <padding>
+        <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+    </padding>
+</fx:root>
